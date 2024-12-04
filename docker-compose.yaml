@@ -1,0 +1,40 @@
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=usuario
+      - RABBITMQ_DEFAULT_PASS=senha
+
+# Comandos úteis:
+
+# Levantar todos os serviços do docker-compose:
+# docker compose up
+
+# Levantar todos os serviços do docker-compose no modo não assistido:
+# docker compose up -d
+
+# Levantar um serviço específico do docker-compose:
+# docker compose up -d nomeServico
+
+# Derrubar todos os serviços:
+# docker compose down
+# (ou ctrl + c)
+
+# Derrubar um serviço específico:
+# docker compose down nomeServico
+
+# Verificar os containeres que estão sendo executados:
+# docker container ls
+
+# Verificar as imagens baixadas:
+# docker image ls
+
+# Verificar os logs de um container:
+# docker logs containerId
+
+#Para saber o IP da máquina:
+# ipconfig
+
